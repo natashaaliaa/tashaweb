@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My Contact</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <style type="text/css">
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        body{
+          width: 100%;
+          min-height: 100vh;
+        }
+        img{
+          width: 300px;
+          height: auto;
+          margin: 10px;
+          border: 20px dodgerblue;
+        }
+        body{background-color: #616161;}
+        p{color: #fffae4; font-style: normal;}
+        h1{color: #FFFFFF; }
+        ul {
+  list-style-type: none;
+  margin: 8px;
+  padding: 0;
+  overflow: auto;
+   }
+
+li {
+  float:left;
+}
+nav a {
+  width: 215px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+li a {
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: wavy;
+  padding: 14px;
+  background-color: #7b8796;
+}
+.active {
+  background-color: #292929;
+}
+</style>
+</head>
+
+<style>
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+  
+  * {
+    box-sizing: border-box;
+    height: auto;
+  
+
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 30px;
+    background-color: #506f77;
+    padding: 8px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  </style>
+  </head>
+<body>
+  <p style="font-variant: small-caps">• welcome to natasha's blog! •</p>
+  <div style="text-align:center">
+    <h1 style ="text-align: center;">Contact</h1>
+
+<nav>
+    <ul>
+       <li><a href="index.html" rel="noopener">Home</a></li>
+       <li><a href="Top3.html" rel="noopener">My Top 3</a></li>
+       <li><a href="movies.html" rel="noopener">Movie Recommendations</a></li>
+       <li><a href="hobby.html" rel="noopener">Hobby</a></li>
+       <li><a href="gallery.html" rel="noopener">Gallery</a></li>
+       <li><a class="active" href="contact.html" rel="noopener">Contact</a></li>
+      </div>
+    </ul>
+</nav>
+</body>
+<hr>
+        
+<p style="text-align: left"> Email us with any questions or enquiries. I would be happy to answer your questions and set up a meeting
+with you! I'll get back to you as soon as I can. That's a promise!</p>
+        <div class="container">
+          <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="harry.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Indonesia">Indonesia</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+
+</body>
+</html>
